@@ -1,0 +1,82 @@
+.skipass-ski {
+  color:rgb(95, 70, 70);
+  background: url('https://www.sestriere-online.com/wp-content/uploads/2019/08/ski-hire.jpg');
+}
+
+.skipass-snb {
+  color:rgb(10, 209, 90);
+  background: url('https://www.ucpa.it/wp-content/uploads/2017/08/00080233.jpg');
+}
+
+.skipass-cart {
+  position: relative;
+  display: inline-block;
+  height: 320px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.skipass-cart p {
+  color: #000;
+}
+
+.skipass-cart > p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skipass-cart:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  background: currentColor;
+  z-index: 1;
+}
+
+.skipass-cart-id {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 10px;
+  text-align: right;
+  z-index: 2;
+}
+
+.skipass-cart-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  letter-spacing: 1px;
+  bottom: 10px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.skipass-snb .skipass-cart-name {
+  background-color: rgba(10, 209, 90, 0.5);
+}
+
+.skipass-ski .skipass-cart-name {
+  background-color: rgba(95, 70, 70, 0.5);
+}
+
+.skipass-cart-name p {
+  margin: 0;
+  font-size: 16px; 
+  line-height: 16px;
+  text-transform: capitalize;
+}
